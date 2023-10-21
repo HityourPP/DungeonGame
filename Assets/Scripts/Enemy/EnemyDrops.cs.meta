@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: e5f1ea67fe817d440965d53ac2bb5d6b
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - manaClump: {fileID: 2789562722269441147, guid: 9609006f44e618342a3a4b3ca2a9dcc3, type: 3}
+  - chest: {fileID: 2318739675520797594, guid: 936932d6dbfa0a24eb6df313e2abbd93, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

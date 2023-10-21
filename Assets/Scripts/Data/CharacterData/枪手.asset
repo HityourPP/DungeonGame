@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d893c838ae2607468d55feaaf9a123f, type: 3}
+  m_Name: "\u67AA\u624B"
+  m_EditorClassIdentifier: 
+  characterInfo:
+  - "\u67AA\u624B"
+  - "\u67AA\u624B\uFF1A\u4E00\u540D\u7ECF\u8FC7\u4E13\u4E1A\u8BAD\u7EC3\u7684\u67AA\u624B\uFF0C\u67AA\u6CD5\u5A34\u719F\uFF0C\u80FD\u591F\u5FEB\u901F\u51FB\u9000\u654C\u4EBA\u3002"
+  - "\u6B66\u5668\uFF1A\u673A\u5173\u67AA"
+  - "\u80FD\u529B\uFF1A\u5FEB\u901F\u653B\u51FB"
+  - "\u88AB\u52A8\uFF1A\u589E\u52A0\u653B\u901F"
+  sprites:
+  - {fileID: -1714174966, guid: a72790bb07abd414ba1503bee62f23dc, type: 3}
+  - {fileID: 21300000, guid: 6b8ca84c5d11d2c41990e6b961de3be8, type: 3}
+  weapon: {fileID: 11400000, guid: 67689a219d7697e4a975d0ae978f23ee, type: 2}
+  coolDown: 5
+  ability: {fileID: 2908195109950972081, guid: cf870afb6b57c254db3256a29c898c36, type: 3}
+  passive: {fileID: 3828362921256768499, guid: 5d2b4fc3909094c4d887c98292e3d69f, type: 3}
+  abilityDuration: 1.5
+  playerGameObject: {fileID: 2990305942997207332, guid: ecef924af0bc26f4b9d3c35dfefe08b9, type: 3}
+  meleeAttackDamage: 3
