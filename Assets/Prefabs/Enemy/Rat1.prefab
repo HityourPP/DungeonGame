@@ -196,7 +196,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 100
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossState: 0
   preState: 0
-  walkSpeed: 3
+  walkSpeed: 5
   touchDamage: 2
   idleTimerMax: 2
   walkTimerMax: 1.5

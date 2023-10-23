@@ -735,7 +735,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roomPrefabs: {fileID: 8934619913935155324, guid: 9ea0fa1177de0d944a78d9b3daa4e74f, type: 3}
-  roomAmount: 10
+  roomAmount: 6
   startColor: {r: 0.27564752, g: 1, b: 0, a: 1}
   endColor: {r: 1, g: 0, b: 0, a: 1}
   point: {fileID: 547543211}

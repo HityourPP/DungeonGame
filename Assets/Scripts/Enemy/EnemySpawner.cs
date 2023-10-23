@@ -15,8 +15,8 @@ public class EnemySpawner : MonoBehaviour
     public Transform CentralTransform;
     private Vector3 centralPos;
 
-    private float defaultSizeX = 7.5f;
-    private float defaultSizeY = 3.5f;
+    private float defaultSizeX = 6f;
+    private float defaultSizeY = 3f;
 
     private float mapSizeX; //设置生成区域
     private float mapSizeY;
@@ -59,16 +59,16 @@ public class EnemySpawner : MonoBehaviour
     {
         return waves == spawnWaves;
     }
-    // private void OnDrawGizmos()
-    // {
-    //     Gizmos.color = Color.green;
-    //     Gizmos.DrawLine(new Vector3(centralPos.x + mapSizeX, centralPos.y + mapSizeY, 0),
-    //         new Vector3(centralPos.x + mapSizeX, centralPos.y - mapSizeY, 0));       
-    //     Gizmos.DrawLine(new Vector3(centralPos.x + mapSizeX, centralPos.y + mapSizeY, 0),
-    //         new Vector3(centralPos.x - mapSizeX, centralPos.y + mapSizeY, 0));       
-    //     Gizmos.DrawLine(new Vector3(centralPos.x - mapSizeX, centralPos.y + mapSizeY, 0),
-    //         new Vector3(centralPos.x - mapSizeX, centralPos.y - mapSizeY, 0));      
-    //     Gizmos.DrawLine(new Vector3(centralPos.x - mapSizeX, centralPos.y - mapSizeY, 0),
-    //         new Vector3(centralPos.x + mapSizeX, centralPos.y - mapSizeY, 0));
-    // }
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.green;
+        Gizmos.DrawLine(new Vector3(centralPos.x + mapSizeX, centralPos.y + mapSizeY, 0),
+            new Vector3(centralPos.x + mapSizeX, centralPos.y - mapSizeY, 0));       
+        Gizmos.DrawLine(new Vector3(centralPos.x + mapSizeX, centralPos.y + mapSizeY, 0),
+            new Vector3(centralPos.x - mapSizeX, centralPos.y + mapSizeY, 0));       
+        Gizmos.DrawLine(new Vector3(centralPos.x - mapSizeX, centralPos.y + mapSizeY, 0),
+            new Vector3(centralPos.x - mapSizeX, centralPos.y - mapSizeY, 0));      
+        Gizmos.DrawLine(new Vector3(centralPos.x - mapSizeX, centralPos.y - mapSizeY, 0),
+            new Vector3(centralPos.x + mapSizeX, centralPos.y - mapSizeY, 0));
+    }
 }

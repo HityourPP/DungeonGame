@@ -23,7 +23,8 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Transform meleeAttackPosition;
     [SerializeField] private float meleeAttackRadius;
     [SerializeField] private LayerMask whatIsEnemy;
-    
+
+    private bool isMeleeAttacking;
     private CharacterInfo_SO selectCharacter;
     public Weapons_SO weaponData;
     
@@ -108,17 +109,13 @@ public class PlayerController : MonoBehaviour
                 if (fireTimer > 1 / weaponData.weaponFireRate * Mathf.Abs(1 - playerStats.fireRate))  //设置攻击间隔
                 {
                     fireTimer = 0f;
-                    if (currentMana > 0)
+                    if (currentMana > 0 && !isMeleeAttacking)
                     {
                         PlayerShootAttack();   //蓝量足够时，产生子弹  
                     }
                 }
             }            
             fireTimer += Time.deltaTime;
-            if (!isFiring)
-            {
-                
-            }
         }
         AnimationController();
     }
@@ -158,6 +155,7 @@ public class PlayerController : MonoBehaviour
     private void PlayerMeleeAttack()
     {
         // ifCanMelee = false;
+        isMeleeAttacking = true;
         anim.SetTrigger("attack");
         Collider2D[] detectedObjects =
             Physics2D.OverlapCircleAll(meleeAttackPosition.position, meleeAttackRadius, whatIsEnemy);
@@ -272,5 +270,10 @@ public class PlayerController : MonoBehaviour
     public float GetCurrentHealth()
     {
         return currentHealth;
+    }
+
+    public void SetMeleeAttackOver()
+    {
+        isMeleeAttacking = false;
     }
 }
