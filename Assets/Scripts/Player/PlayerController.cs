@@ -181,7 +181,7 @@ public class PlayerController : MonoBehaviour
             {
                 isLeft = true;
                 transform.Rotate(0, 180f, 0);
-                        hand.transform.localScale = new Vector3(1f, -1f, 1f);
+                hand.transform.localScale = new Vector3(1f, -1f, 1f);
             }
         }
         if ((playerAim.GetAngle() > -90f && playerAim.GetAngle() < 90f))
